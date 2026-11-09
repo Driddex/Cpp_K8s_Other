@@ -1,0 +1,18 @@
+name: checker
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dowload repository
+        uses: actions/checkout@v4
+      - name: dowload python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+          cache: pip
+          cache-dependency-path: api/requirements.txt
