@@ -1,5 +1,4 @@
 .env
 .vscode/
 frontend/node_modules/
-cs/
-k8s/
+k8s
